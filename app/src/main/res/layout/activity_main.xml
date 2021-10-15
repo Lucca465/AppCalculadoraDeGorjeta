@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textGorjeta"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginStart="130dp"
@@ -74,6 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/laranja_claro"
@@ -82,18 +83,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarGorjeta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:max="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textPorcentagem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -107,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textTotal"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginStart="130dp"
